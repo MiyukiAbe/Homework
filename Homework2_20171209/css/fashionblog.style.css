@@ -1,0 +1,174 @@
+header, main, footer {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	color: #444;
+	line-height: 1.5;
+}
+
+.headtitle{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.headtitle h1 {
+	font-size: 54px;
+	margin: auto 20px auto 0px;
+	color: #D00;
+}
+
+.headtitle h4 {
+	font-size: 27px;
+	color: #888;
+	margin-bottom: -50px;
+}
+
+.headernav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headernav a{
+	background: black;
+	display: block;
+	text-align: center;
+	color: white;
+	width: 17%;
+	margin: 0.7px;
+	padding: 20px;
+}
+
+.headernav a:hover{
+	background-color:#900;
+}
+
+a{
+	text-decoration: none;
+}
+
+main{
+	display:flex;
+	justify-content: center;
+}
+
+section{
+	width: 66%;
+	display:flex;
+	display: block;
+	flex-direction:column;
+	margin-right: 30px;
+}
+
+article{
+	border-bottom: 0.5px solid #DDD;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+h2{
+	font-size: 36px;
+	color: black;
+	margin: 10px 0px;
+}
+
+h3 {
+	font-size: 36px;
+	color: #CCC;
+	margin: 20px 0px 0px 0px;
+}
+
+article img {
+	display: block;
+	height: auto;
+	width: 100%;
+	position: center;
+}
+
+.firstcharacter {
+	color: #ccc;
+	float: left;
+	font-size: 100px;
+	line-height: 60px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+}
+
+p {
+	margin-top: 30px;
+	text-align: left;
+}
+
+article a{
+	align-self: flex-end;
+	color: #D00;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+article a:hover{
+	color: #A00;
+}
+
+aside{
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	padding-left: 10px;
+}
+
+aside a:hover{
+	color: #A00;
+}
+
+h5{
+	font-size: 18px;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+}
+
+.More {
+	display: block;
+	align-self: flex-end;
+	color: #D00;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.advertise {
+	display: block;
+	padding: 60px 0px;
+	border-bottom: 0.5px solid #DDD;
+	border-top: 0.5px solid #DDD;
+}
+.advertise img{
+	width: 100%;
+	height: auto;
+}
+
+li{
+	color: #D00;
+}
+
+footer{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.footernav{
+	margin-top: 60px;
+	display: inline-block;
+}
+
+.footernav a{
+	border-right: 0.5px solid #DDD;
+	padding: 0 5px;
+	color: #D00;
+}
