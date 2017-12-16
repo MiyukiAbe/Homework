@@ -1,0 +1,51 @@
+
+body.Portfolio {
+	text-align: center;
+	background-color: rgba(70,130,240, 0.1);
+	text-align: center;
+	color:#535353;
+	font-size: 20px;
+	font-family: 'Londrina Solid', cursive;
+	margin: 10px auto;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+	display: inline;
+	padding: 10px;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+.Portfolioheader {
+    height: auto;
+    width: 250px;
+    margin: 10px auto;
+}
+
+.Portfoliofooter{
+	height: auto;
+    width: 400px;
+    margin: 10px auto;
+}
+
+/**So far, above from here is exactly same as about me CSS**/
+
+h2.Portfolio {
+	font-family: 'Londrina Shadow', cursive;
+}
+
+p.Portfolio {
+	margin: 10px auto;
+	max-width: 600px;
+}
+
+img.Portfolio {
+	max-width: 600px;
+}

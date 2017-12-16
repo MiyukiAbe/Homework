@@ -1,0 +1,79 @@
+body.AboutMe {
+	text-align: center;
+	background-image: url(../images/New York City Skyline.jpg);
+	background-image: linear-gradient(rgba(70,130,240, 0.1), rgba(70,130,240, 0.5)), url("../images/New York City Skyline.jpg");
+	background-image: webkit-linear-gradient(rgba(70,130,240, 0.1), rgba(70,130,240, 0.5)), url("../images/New York City Skyline.jpg");
+	background: moz-linear-gradient(rgba(70,130,240, 0.1), rgba(70,130,240, 0.5)), url("../images/New York City Skyline.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:#535353;
+	font-size: 20px;
+	font-family: 'Londrina Solid', cursive;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: 'Londrina Shadow', cursive;
+}
+
+span {
+	font-family: 'Londrina Solid', cursive;
+	text-decoration: underline;
+}
+
+h2.AboutMe {
+	text-align: center;
+	font-size: 15px
+	margin:15px;
+}
+
+img.AboutMe {
+	height: 250px;
+	width: auto;
+	border-radius: 12px;
+	position: right;
+	margin: 0px 0px 0px 25px;
+}
+
+p.AboutMe {
+	text-align: justify;
+	position: left;
+	font-size: 15px;
+}
+
+ul {
+    padding: 2px;
+}
+
+li {
+	display: inline;
+	padding: 10px;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+.AboutMeheader {
+	background-color: rgba(255, 255, 255, 0.3);
+    height: auto;
+    width: 250px;
+    margin: 10px auto;
+}
+.mainpart {
+	height: 350px;
+	width: 600px;
+	background-color: rgba(255, 255, 255, 0.6);
+	margin: 100px auto;
+	padding: 10px;
+}
+.AboutMefooter {
+	background-color: rgba(255, 255, 255, 0.3);
+	height: auto;
+    width: 400px;
+    margin: -10px auto 10px auto;
+}
+
