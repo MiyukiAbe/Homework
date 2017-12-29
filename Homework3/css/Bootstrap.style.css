@@ -1,0 +1,57 @@
+
+
+nav a{
+	color: #b7b7b0;
+}
+
+nav a:hover{
+	color: white;
+}
+
+nav, h1, .subnote {
+	margin: 0px auto;
+}
+
+h1 {
+	margin-top: 50px;
+}
+
+main .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+section {
+	margin: 0px auto;
+}
+
+aside{
+	margin: 0px 60px;
+}
+
+
+.publisheddate{
+	display: block;
+	margin-bottom: 20px;
+}
+
+.asidearticle{
+	margin: 20px 0px;
+}
+
+.card {
+	background-color: #F5F5F5;
+	border: none;
+}
+
+.ulaside{
+	list-style: none;
+	padding-left: 0px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 60px;
+}
+
