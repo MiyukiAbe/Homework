@@ -123,6 +123,11 @@ header {
   background: #fff600;
 }
 
+.capitalise
+{
+    text-transform:capitalize;
+}
+
 .nyc {
   background-image: url(../images/nyc.jpg)
 }
