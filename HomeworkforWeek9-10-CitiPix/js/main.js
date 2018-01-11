@@ -1,24 +1,24 @@
 
 //Homework
-	// Call $.val() on inputs to get the string value of your user's input
+	// Call $.val() on inputs to get the string value of your user's input -- done
 
-	//document.getElementById("city-type").value;
+	//document.getElementById("city-type").value;  
 
-	// Store user input in var city
+	// Store user input in var city ---done
 
-	// Use $.on(submit) or $.click to figure out when the user clicks the "submit" button
+	// Use $.on(submit) or $.click to figure out when the user clicks the "submit" button ----done
 
-	// Create if / else if / else conditionals to control the flow of your application
+	// Create if / else if / else conditionals to control the flow of your application --- done
 
-	// Write at least six different lines of pseudocode and display them inline as JavaScript comments (dpne)
+	// Write at least six different lines of pseudocode and display them inline as JavaScript comments --- done
 
-	// Prevent a form submission using the event.preventDefault() function
+	// Prevent a form submission using the event.preventDefault() function ---done
 
-	// Use the $.ready() handler to delay your code from executing until all DOM assets have been loaded
+	// Use the $.ready() handler to delay your code from executing until all DOM assets have been loaded ---done
 
 	// Get the first element from an attribute name using $.attr()
 
-	// Use the || operator in your conditionals to allow for multiple string values to execute if/else if statement code
+	// Use the || operator in your conditionals to allow for multiple string values to execute if/else if statement code --done
 
 
 
@@ -36,44 +36,72 @@
 		//else if it says "SYDNEY" or "SYD"
 			//change the background image to sydney.jpg
 		//else
-			//show the defult background image
+			//show the defult background image and alert
+
+
 
 $(document).ready(function(){
+	
+$('#city-type').keyup(function() {
+	$(this).val($(this).val().toUpperCase());
+});
 
-var city = $("#city-type").val();
-$("#submit-btn").click(changeImage);
-
-function changeImage(city) {
-  if (city === "New York" || city === "NY" || city === "NYC") {
-  	// $("body").addClass("nyc") this does not work. Also "New York", "NYC"...did not work.
-   		$("body").css("background-image", "url(images/nyc.jpg)");
+ $("#submit-btn").click(function() {
+		var city = $("#city-type").val();
+		// $("#city-type").addClass("capitalise");does not work.....
+  		changeImage(city);
+  		event.preventDefault();
+});
+ 
+	function changeImage(city) {
+  	if (city === "NEW YORK" || city === "NY" || city === "NYC") {
+  		$("body").addClass("nyc");
+   		// $("body").css("background-image", "url(images/nyc.jpg)");
   } else if (city === "SF" || city === "SAN FRANCISCO" || city ==="BAY AREA") {
-  		$("body").css("background-image", "url(images/sf.jpg)");
+  		$("body").addClass("sf");
+  		// $("body").css("background-image", "url(images/sf.jpg)");
   } else if (city === "LA" || city === "LOS ANGELES" || city ==="LAX") {
-		$("body").css("background-image", "url(images/la.jpg)");
+  		$("body").addClass("la");
+		// $("body").css("background-image", "url(images/la.jpg)");
   } else if (city === "ATX" || city === "AUSTIN") {
-  		$("body").css("background-image", "url(images/austin.jpg)");
+  		$("body").addClass("austin");
+  		// $("body").css("background-image", "url(images/austin.jpg)");
   } else if (city ==="SYD" || city === "SYDNEY") {
-  		$("body").css("background-image", "url(images/sydney.jpg)");
-  } 
+  		$("body").addClass("sydney");
+  		// $("body").css("background-image", "url(images/sydney.jpg)");
+  } else {
+   		alert("Try something else!");
+  }
 }
 
-// changeImage(city); does not work. Having difficulty connecting input as value.
-changeImage("SF");
-
-
-// need to put below items to somewhere...
-// 	event.preventDefault();
-// 	var = return
-
-//below alert worked
-//When the user type words inside form && click the button,
-	//show alert 
+//Below also works!!
 // $("#submit-btn").click(function() {
-// 		var city = $("#city-type").val();
-//   	alert(city);
-//   	event.preventDefault();
+// 	var city = $("#city-type").val();
+//   	if (city === "New York" || city === "NY" || city === "NYC") {
+//   		$("body").addClass("nyc");
+//    		// $("body").css("background-image", "url(images/nyc.jpg)");
+//   } else if (city === "SF" || city === "SAN FRANCISCO" || city ==="BAY AREA") {
+//   		$("body").addClass("sf");
+//   		// $("body").css("background-image", "url(images/sf.jpg)");
+//   } else if (city === "LA" || city === "LOS ANGELES" || city ==="LAX") {
+//   		$("body").addClass("la");
+// 		// $("body").css("background-image", "url(images/la.jpg)");
+//   } else if (city === "ATX" || city === "AUSTIN") {
+//   		$("body").addClass("austin");
+//   		// $("body").css("background-image", "url(images/austin.jpg)");
+//   } else if (city ==="SYD" || city === "SYDNEY") {
+//   		$("body").addClass("sydney");
+//   		// $("body").css("background-image", "url(images/sydney.jpg)");
+//   } else {
+//    	alert("Try something else!");
+//   }
+// 	event.preventDefault();
+
 // });
+
+
+// 	var = return do I need to put this?
+
 
 //Below click button and change background worked
 // $("button").on("click", changeImage)

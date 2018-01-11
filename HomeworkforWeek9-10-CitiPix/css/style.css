@@ -101,6 +101,7 @@ header {
   line-height: 74px;
   vertical-align: middle;
   box-shadow: #111 0 0 20px;
+/*  text-transform: uppercase;*/
 }
 #submit-btn {
   background: #ffe500;
