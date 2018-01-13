@@ -2,7 +2,7 @@
 //Homework
 	// Call $.val() on inputs to get the string value of your user's input -- done
 
-	//document.getElementById("city-type").value;  
+	//document.getElementById("city-type").value;  used this  "var city = $("#city-type").val();""
 
 	// Store user input in var city ---done
 
@@ -16,11 +16,9 @@
 
 	// Use the $.ready() handler to delay your code from executing until all DOM assets have been loaded ---done
 
-	// Get the first element from an attribute name using $.attr()
+	// Get the first element from an attribute name using $.attr() ---
 
 	// Use the || operator in your conditionals to allow for multiple string values to execute if/else if statement code --done
-
-
 
 
 //My note
@@ -42,13 +40,13 @@
 
 $(document).ready(function(){
 	
+//capitalized input
 $('#city-type').keyup(function() {
 	$(this).val($(this).val().toUpperCase());
 });
 
  $("#submit-btn").click(function() {
 		var city = $("#city-type").val();
-		// $("#city-type").addClass("capitalise");does not work.....
   		changeImage(city);
   		event.preventDefault();
 });
@@ -76,38 +74,22 @@ $('#city-type').keyup(function() {
 
 //Below also works!!
 // $("#submit-btn").click(function() {
-// 	var city = $("#city-type").val();
+// 		var city = $("#city-type").val();
 //   	if (city === "New York" || city === "NY" || city === "NYC") {
 //   		$("body").addClass("nyc");
-//    		// $("body").css("background-image", "url(images/nyc.jpg)");
 //   } else if (city === "SF" || city === "SAN FRANCISCO" || city ==="BAY AREA") {
 //   		$("body").addClass("sf");
-//   		// $("body").css("background-image", "url(images/sf.jpg)");
 //   } else if (city === "LA" || city === "LOS ANGELES" || city ==="LAX") {
 //   		$("body").addClass("la");
-// 		// $("body").css("background-image", "url(images/la.jpg)");
 //   } else if (city === "ATX" || city === "AUSTIN") {
 //   		$("body").addClass("austin");
-//   		// $("body").css("background-image", "url(images/austin.jpg)");
 //   } else if (city ==="SYD" || city === "SYDNEY") {
 //   		$("body").addClass("sydney");
-//   		// $("body").css("background-image", "url(images/sydney.jpg)");
 //   } else {
 //    	alert("Try something else!");
 //   }
 // 	event.preventDefault();
 
 // });
-
-
-// 	var = return do I need to put this?
-
-
-//Below click button and change background worked
-// $("button").on("click", changeImage)
-// function changeImage() {
-//   $("body").css("background-image", "url(images/nyc.jpg)");
-// }
-
 
 });
