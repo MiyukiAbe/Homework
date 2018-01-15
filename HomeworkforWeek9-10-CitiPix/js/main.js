@@ -53,7 +53,6 @@ $('#city-type').keyup(function() {
  
 	function changeImage(city) {
   	if (city === "NEW YORK" || city === "NY" || city === "NYC") {
-  		$("body").addClass("nyc");
    		// $("body").css("background-image", "url(images/nyc.jpg)");
   } else if (city === "SF" || city === "SAN FRANCISCO" || city ==="BAY AREA") {
   		$("body").addClass("sf");
