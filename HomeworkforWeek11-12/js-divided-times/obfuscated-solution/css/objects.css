@@ -47,7 +47,6 @@
 }
 #page-header nav ul li a:hover {
 	background: #f6f6f6;
-/*	background: #f6f6f6 !important;*/
 }
 #page-header nav ul li a:hover span {
 	border: none;
@@ -63,12 +62,10 @@
 #page-header nav ul li.active a span {
 	border: none;
 	padding-right: 25px;
-	 
 }
 
 
 /* Slide Down */
-
 #slide-down {
 	display: none;
 	overflow: hidden;
@@ -76,11 +73,8 @@
 	color: white;
 	border-bottom: 1px solid black;
 }
-
 .drop {
 	padding: 20px;
-	display: none;
-	overflow: hidden;
 }
 
 /* Main */
@@ -189,12 +183,4 @@
 /* Main Article */
 article.main header h1 {
 	font-size: 2.5em;
-}
-
-.navActive {
-	z-index: 2;
-	background: #666;
-	color: #f6f666;
-	padding-bottom: 12px;
-	margin-bottom: -2px;
 }
